@@ -1,0 +1,1193 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Cinzel:wght@400..900&family=Kaisei+Decol&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
+}
+
+.Ads {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+}
+/* ========================================Home-section========================================================== */
+.Home-section{
+    position: relative;
+    height: 150vh;  
+    width: 100vw;
+    background-color:#dc0714;
+}
+nav { 
+    display: flex;
+    position: fixed;
+    height: 10%;
+    width: 90%;
+    margin-left: 5%;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #dc0714;
+    z-index: 10;
+}
+nav a {
+    text-decoration: none;
+    color: #ffff;
+    font-size: 13px;
+    font-weight: 800;
+}
+.logo {
+    margin-right: 200px;
+}
+nav .logo a {
+    font-family: "Antic Slab", serif;
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-weight: 400;
+    font-style: normal;
+}
+i {
+    margin: 0 5px;
+}
+.nav-Separator {
+    height: 20px;
+    width: 1px;
+    background-color: #ddd9d9b3;
+    margin-right: -5px;
+}
+.standar-group a {
+    display: flex;
+    font-weight: 400;
+    margin-top: 2px;
+}
+.standar-group p {
+    color: #ffff;
+    margin-top: 5px;
+}
+.standar-group img {
+    height: 39px;
+    margin-right: 5px;
+}
+.News-Section {
+    display: flex;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 10%;
+    left: 5%;
+    background-color:#dc0714;
+}
+.Link-Button {
+    display: flex;
+    width: 100%;
+    height: 6%;
+    background-color:#dc0714;
+
+}
+.Link-Button a {
+    display: flex;
+    align-self: center;
+    position: absolute;
+    color: #ffff;
+    font-size: 17px;
+    text-decoration: none;
+    right: 30px;
+    width: 98px;
+}
+.Link-Button a span {
+    display: inline-block;
+    width: 10px;
+    margin-left: 3px;
+    
+}
+.Link-Button a:hover{
+    color: #a89c9d96;
+}
+.Link-Button a:hover span {
+    translate: 10px 0px;
+}
+.Link-Button button {
+    color: #ffff;
+    background: #1310102f;
+    font-variant: small-caps;
+    padding: 10px;
+    border: none;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight:900;
+    height: 40px;
+}
+.News-cards-containers {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex-flow: row wrap;
+    height: 85%;
+    width: 100%;
+    position: absolute;
+    top: 5%;
+    background-color: #dc0714;
+}
+.News-cards-containers .News-Cards {
+    width: calc(100% /3);
+    height:50%;
+    /* background:#3c07dc; */
+    /* border: #a89c9d 2px solid; */
+    padding: 15px;
+}
+.News-cards-containers .News-Cards:hover {
+    background: #0000001c;
+}
+.News-cards-containers .News-Cards:hover  p   {
+    translate: 0px -5px;
+}
+.News-cards-containers .News-Cards:hover h6 {
+    translate: 0px -5px;
+}
+.News-cards-containers .News-Cards img {
+    height: 55%;
+    width: 99%;
+}
+.News-cards-containers .News-Cards a {
+    text-decoration: none;
+}
+.News-cards-containers .News-Cards h6 {
+    color: #ffffffa9;
+    font-variant: small-caps;
+    margin-block-start: 50px;
+    margin-bottom: 5px;
+}
+.News-cards-containers .News-Cards  p {
+    color: #ffff;
+    font-size: 20px;
+}
+.News-cards-containers .News-Cards span {
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: #ddd9d9b3;
+}
+.News-cards-containers .Ad-Card {
+    position: relative;
+    width: 95%;
+    height: 92%;
+    margin-left: 2.5%;
+    padding: 15px;
+    background-color: #00634d ;
+}
+.News-cards-containers .Ad-Card p {
+    color: #ffff;
+    font-size: 21px;
+}
+.News-cards-containers .Ad-Card img {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    right: 15px;
+}
+.News-cards-containers .Ad-Card .BTN {
+    display: flex;
+    position: absolute;
+    top: 285px;
+    width: 94%;
+    margin-right: 3%;
+    height: 60px;
+    background-color: #000;
+    color: #ffff;
+    padding: 20px;
+    overflow: hidden;
+}
+.News-cards-containers .Ad-Card .BTN a {
+    display: flex;
+    align-self: center;
+    color: #ffff;
+    font-variant: small-caps;
+    font-size: 22px;
+    font-weight: bold;
+    
+}
+.News-cards-containers .Ad-Card .BTN:hover {
+    background-color: #00000096;
+}
+.News-cards-containers .Ad-Card .BTN:hover .Sign {
+    translate: 10px 0px;
+}
+.News-cards-containers .Ad-Card .BTN a .Sign {
+    display: inline-block;
+    width: 30px;
+    margin-left: 6px;
+}
+/* ==========================================Retail-section======================================================== */
+.Retail-section {
+    height: 150vh;
+    width: 100vw;
+    background-color: #fff;
+    padding: 60px 60px 90px;
+}
+.Retail-section .Retail-BtN {
+    height: fit-content;
+    padding: 15px 80px;
+}
+.Retail-section .Retail-BtN span {
+    display: block;
+    color: #ffff;
+    background: #131010;
+    width: 150px;
+    height: 45px;
+    font-variant: small-caps;
+    padding: 5px 15px;
+    border-radius: 25px;
+    font-size: 22px;
+    font-weight: 900;
+    text-align: center;
+}
+.Retail-Category-Menu {
+    height: fit-content;
+    width: 100%;
+    padding: 0px 80px;
+    margin: 0px 0px 30px;
+}
+.Retail-section .Retail-Category-Menu p {
+    font-size: 14 px;
+    color: #000;
+    font-weight: 900;
+    padding: 20px 0px 18px;
+}
+.Retail-section .Retail-Category-Menu span {
+    display: inline-block;
+    height: 2px;
+    width: 150px;
+    background-color: #830f17;
+}
+.Retail-Cards-Container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 100%;
+    height: 65%;
+    padding: 0px 80px;
+}
+.Retail-Card{
+    cursor: pointer;
+    height: 90%;
+    width: 18%;
+    border: 1px solid #7f7777b3;
+}
+.Retail-Card img {
+    width: 100%;
+    height: 50%;
+}
+.Price-Card {
+    padding: 15px;
+}
+.Retail-Card:hover .Price-Card {
+    translate: 0px -10px;
+}
+.Retail-Card p {
+    text-transform: uppercase;
+    color: #706969;
+    font-size: 20px;
+    font-variant: small-caps;
+}
+.Price-Card span {
+    display: block;
+    font-size: 45px;
+    font-family: "Anton", sans-serif;
+}
+.Price-Card .BTN {
+    display: flex;
+    width: 94%;
+    margin-right: 3%;
+    height: 60px;
+    background-color: #000;
+    color: #ffff;
+    padding: 20px;
+    overflow: hidden;
+}
+.Price-Card .BTN a {
+    display: flex;
+    align-self: center;
+    color: #ffff;
+    font-variant: small-caps;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.Price-Card .BTN:hover {
+    background-color: #00000096;
+}
+.Price-Card .BTN:hover .Sign {
+    translate: 10px 0px;
+}
+.Price-Card .BTN a .Sign {
+    display: inline-block;
+    width: 30px;
+    margin-left: 6px;
+}
+.Visit-Store {
+    position: absolute;
+    left: 41%;
+    height: fit-content;
+    padding-top: 15px;
+}
+.Visit-Store .BTN {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    margin-right: 3%;
+    height: 85px;
+    background-color: #fcda18;
+    color: #ffff;
+    padding: 10px;
+    overflow: hidden;
+}
+.Visit-Store .BTN a {
+    display: flex;
+    align-self: center;
+    color: #000;
+    font-variant: small-caps;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.Visit-Store .BTN:hover {
+    background-color: #ffe140;
+}
+.Visit-Store .BTN:hover .Sign {
+    translate: 10px 0px;
+}
+.Visit-Store .BTN a .Sign {
+    display: inline-block;
+    width: 30px;
+    margin-left: 6px;
+}
+/* ==========================================Pre-season-Section======================================================== */
+.Pre-season-Section {
+    width: 100vw;
+    height: 100vh;
+    padding: 60px 0px 90px;
+}
+.pre-season-BTNS {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 20%;
+    padding: 15px 30px;
+}
+.Pre-season-Section .Intro-BTN {
+    height: fit-content;
+    padding: 15px 80px;
+}
+.Pre-season-Section .Intro-BTN span {
+    display: inline-block;
+    color: #ffff;
+    background: #131010;
+    width: 150px;
+    height: 45px;
+    font-variant: small-caps;
+    padding: 5px 15px;
+    border-radius: 25px;
+    font-size: 22px;
+    font-weight: 900;
+    text-align: center;
+}
+.Add-Fixtures {
+    position: absolute;
+    right: 200px;
+    cursor: pointer;
+    height: fit-content;
+    padding: 15px 90px;
+}
+.Add-Fixtures span {
+    display: inline-block;
+    color: #000;
+    background: #ffe140;
+    width: 300px;
+    height: 45px;
+    font-variant: small-caps;
+    padding: 5px 15px;
+    border-radius: 25px;
+    font-size: 22px;
+    font-weight: 900;
+    text-align: center;
+}
+.Add-Fixtures span i {
+    margin-right: 10px;
+}
+.All-Fixtures {
+    padding: 15px;
+}
+.All-Fixtures a {
+    display: inline-block;
+    display: flex;
+    white-space: nowrap;
+    height: fit-content;
+    margin-block-end: 10px;
+    position: absolute;
+    right: 25px;
+    color: rgba(12, 12, 12, 0.803);
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 60px;
+    width: 150px;
+}
+.All-Fixtures a span {
+    display: block;
+    width: 30px;
+    height: fit-content;
+    margin-left: 7px;
+}
+.All-Fixtures a:hover {
+    color: #504b4bb3;
+}
+.All-Fixtures a:hover span {
+    translate: 10px 0px;
+}
+.Fixtures-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 80%;
+    padding: 30px  80px;
+}
+.Slider-Fixtures {
+    height: 400px;
+    width: 400px;
+    border: 2px solid #d1c9c9b3;
+    padding: 15px;
+    position: relative;
+}
+.Day-Date-Fixtures {
+    font-variant: small-caps;
+    padding-bottom: 90px;
+}
+.Day-Date-Fixtures h3 {
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+.Day-Date-Fixtures p {
+    text-transform: uppercase;
+    color: #0c0c0cb3;
+    font-size: 15px;
+}
+.Liver-fixture {
+    display: flex;
+}
+.Liver-fixture img {
+    height: 28px;
+    width: 28px;
+}
+.Liver-fixture h4 {
+    font-size: 17px;
+    font-weight: 400;
+}
+.Slider-Fixtures span {
+    display: inline-block;
+    width: 95%;
+    margin-right: 2.5%;
+    height: 1px;
+    background-color: #d1c9c9b3;
+}
+.Against-Liver {
+    display: flex;
+    margin-top: 7px;
+}
+.Aganist-Liver img {
+    height: 28px;
+    width: 28px;
+}
+.Aganist-Liver h4 {
+    font-size: 17px;
+    font-weight: 400;
+}
+.Slider-Fixtures .BTN {
+    display: flex;
+    position: absolute;
+    top: 285px;
+    width: 94%;
+    margin-right: 3%;
+    height: 80px;
+    background-color: #000;
+    color: #ffff;
+    padding: 20px;
+    overflow: hidden;
+}
+.Slider-Fixtures .BTN a {
+    display: flex;
+    align-self: center;
+    color: #ffff;
+    font-variant: small-caps;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.Slider-Fixtures .BTN:hover {
+    background-color: #00000096;
+}
+.Slider-Fixtures .BTN:hover .Sign {
+    translate: 10px 0px;
+}
+.Slider-Fixtures .BTN a .Sign {
+    display: inline-block;
+    width: 30px;
+    margin-left: 6px;
+}
+/* ==========================================LFC-Woman-section======================================================== */
+.LFC-Woman-section {
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+    background-color: #dc0714;
+    padding: 30px;
+}
+.LFC-Woman-BTNS {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 98%;
+    height: 16%;
+    padding: 0px 30px;
+    background-color: #dc0714;
+}
+.LFC-Woman-BTNS .Intro-BTN {
+    height: fit-content;
+    padding: 15px 80px;
+
+}
+.LFC-Woman-BTNS .Intro-BTN span {
+    display: inline-block;
+    color: #fff;
+    background-color: #0c0c0c33;
+    width: 130px;
+    height: 35px;
+    font-variant: small-caps;
+    padding: 5px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+}
+.More-News {
+    display: flex;
+    width: 100%;
+    
+}
+.More-News a {
+    display: flex;
+    align-self: center;
+    position: absolute;
+    color: #ffff;
+    font-size: 18px;
+    text-decoration: none;
+    font-variant: small-caps;
+    right: 30px;
+    width: 98px;
+}
+.More-News a span {
+    display: inline-block;
+    width: 18px;
+    margin-left: 3px;
+
+}
+.More-News a:hover {
+    color: #d1c2c4d8;
+}
+.More-News a:hover span {
+    translate: 10px 0px;
+}
+.Lfc-Woman-Container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    top: 19%;
+    background-color: #dc0714;
+    padding: 0px 80px;
+}
+.Lfc-Woman-Container .Lfc-Woman-Cards {
+    width: 28%;
+    height: 100%;
+    padding: 15px 15px 0px;
+    
+}
+.Lfc-Woman-Container .Lfc-Woman-Cards:hover {
+    background: #0000001c;
+}
+.Lfc-Woman-Container .Lfc-Woman-Cards:hover p {
+    translate: 0px -5px;
+}
+.Lfc-Woman-Container .Lfc-Woman-Cardss:hover h6 {
+    translate: 0px -5px;
+}
+.Lfc-Woman-Container .Lfc-Woman-Cards img {
+    height: 250px;
+    width: 350px;
+}
+.Lfc-Woman-Container .Lfc-Woman-Cards a {
+    text-decoration: none;
+}
+.Lfc-Woman-Container .Lfc-Woman-Cards h6 {
+    color: #ffffffa9;
+    font-variant: small-caps;
+    margin-block-start: 50px;
+    margin-bottom: 5px;
+}
+.Lfc-Woman-Container .Lfc-Woman-Cards p {
+    color: #ffff;
+    font-size: 20px;
+}
+.Lfc-Woman-Container .Lfc-Woman-Cards span {
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: #ddd9d9b3;
+}
+/* ==========================================Have-You-Seen-Section======================================================== */
+.Have-You-Seen-Section {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:flex-start;
+    /* align-items: center; */
+    width: 100vw;
+    height: 150vh;
+    background-color: #f6f6f6;
+    padding: 60px 60px 90px;
+    z-index: 1;
+}
+.Have-seen-Container {
+    position: absolute;
+    left: 200px;
+    top: 10%;
+    height: 80%;
+    width: 70%;
+    background-color: #f6f6f6;
+    padding: 15px;
+    z-index: 2;
+    overflow-y: hidden;
+}
+.Have-seen-Container .Have-YouSeen-BTN span {
+    display: inline-block;
+    color: #fff;
+    background-color: #0c0c0c;
+    width: 150px;
+    height: 35px;
+    font-variant: small-caps;
+    padding: 5px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+}
+.Have-seen-Container p {
+    font-size: 38px;
+    color: #0c0c0c;
+}
+.Have-seen-Container p span {
+    font-size: 20px;
+    font-weight: bold;
+}
+.Have-seen-Container h6 {
+    margin-top: 20px;
+    color: #d1c9c9b3;
+    font-variant: small-caps;
+    font-size: 12px;
+}
+.Have-seen-Container img {
+    margin-block-start: 50px;
+    width: 95%;
+    height: 85%;
+}
+.sticky-Gallery {
+    position: absolute;
+    bottom: 110px;
+    right: 100px;
+    width: 20%; 
+    height: 70%;
+    background-color: #fff;
+    z-index: 3;
+}
+.Sticky-Card {
+    padding: 15px 15px 0px;
+    cursor: pointer;
+}
+.Sticky-Card img {
+    width: 278px;
+    height: 170px;
+    text-align: center;
+}
+.Sticky-Card h6 {
+    font-size: 12px;
+    color: #0c0c0cb3;
+    font-variant: small-caps;
+    margin: 0px 0px 5px;
+}
+.Sticky-Card:hover p {
+    translate: 0px -5px;
+}
+.Sticky-Card:hover h6 {
+    translate: 0px -4px;
+}
+
+/* ==========================================Top-Scorers-section======================================================== */
+.Top-Scorers-section {
+    height: 100vh;
+    width: 100vw;
+    padding: 60px 0px 90px;
+    background-color: #f6f6f6;
+}
+.Top-Scorers-BTNS {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    padding: 15px 80px;
+}
+
+.Top-Scorers-BTNS .Intro-BTN {
+    height: fit-content;
+    width: 230px;
+}
+.Top-Scorers-BTNS .Intro-BTN span {
+    display: inline-block;
+    color: #fff;
+    background-color: #0c0c0c;
+    width: 190px;
+    height: 35px;
+    font-variant: small-caps;
+    padding: 5px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+}
+.Players-Profiles {
+    display: flex;
+    width: 100%;
+    margin-right: 30px;
+}
+.Players-Profiles a {
+    display: flex;
+    align-self: center;
+    position: absolute;
+    color: #0c0c0c;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    font-variant: small-caps;
+    right: 30px;
+    width: 150px;
+    margin-right: 80px;
+}
+.Players-Profiles a span {
+    display: inline-block;
+    width: 18px;
+    margin-left: 3px;
+
+}
+.Players-Profiles a:hover {
+    color: #d1c2c4d8;
+}
+.Players-Profiles a:hover span {
+    translate: 10px 0px;
+}
+.Players-Cards-Container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 98%;
+    height: 86%;
+    padding: 0px 80px;
+    background-color: #f6f6f6;
+
+}
+.Player-Card {
+    position: relative;
+    height: 100%;
+    width: 33%;
+    border: 2px solid #d1c9c9b3;
+    background-color: #fff;
+    padding: 15px;
+    z-index: 2;
+}
+.Player-Card::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 97%;
+    background-color: #f6f6f6;
+    clip-path: polygon(100% 0, 0% 129%, 100% 100%);
+    z-index: -1;
+    top: 0;
+}
+.Player-Card img {
+    height: 63px;
+    width: 60px;
+    margin-bottom: 10px;
+}
+.Player-Card a {
+    display: block;
+    padding: 0px 0px 8px;
+    text-decoration: none;
+    color: #000;
+    font-size: 26px;
+}
+.Name-NumberofPlayer span {
+    color: #0c0c0cb3;
+    font-size: 18px;
+    font-variant: small-caps;
+}
+.Name-NumberofPlayer img {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    z-index: 3;
+    width: 105px;
+    height: 105px;
+    border-radius: 50%
+}
+.Season-Part {
+    margin-block-start: 50px;
+}
+.Season-Part p {
+    color: #0c0c0c2b;
+    font-size: 18px;
+    padding: 0px 0px 8px;
+}
+.Player-data {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px 15px;
+    padding: 15px 20px 20px 0px;
+    border-bottom: 1px solid #0c0c0c2b;
+    border-right: 1px solid #0c0c0c2b;
+}
+.Player-data h3 {
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #0c0c0cb3;
+}
+.Players-Profiles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 0px;
+    width: 100%;
+}
+.Profile-links {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 6%;
+}
+.Profile-links a {
+    display: flex;
+    color: #0c0c0cb3;
+    font-size: 18px;
+    text-decoration: none;
+    right: 30px;
+    width: 110px;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+.Profile-links a span {
+    display: inline-block;
+    width: 10px;
+    margin-left: 3px;
+}
+.Profile-links a:hover {
+    color: #0c0c0c2b;
+}
+.Profile-links a:hover span {
+    translate: 10px 0px;
+} 
+/* ==========================================Club-And-Community-Section======================================================== */
+.Club-And-Community-Section {
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+    background-color: #f6f6f6;
+    padding: 10px;
+}
+.Club-And-Community-BTNS {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 98%;
+    height: 16%;
+    padding: 0px 30px;
+    background-color: #f6f6f6;
+}
+.Club-And-Community-BTNS .Intro-BTN {
+    height: fit-content;
+    padding: 15px 80px;
+}
+.Club-And-Community-BTNS .Intro-BTN span {
+    display: inline-block;
+    color: #fff;
+    background-color: #0c0c0c;
+    width: 200px;
+    height: 35px;
+    font-variant: small-caps;
+    padding: 5px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+}
+.More {
+    display: flex;
+    width: 100%;
+}
+.More a {
+    display: flex;
+    align-self: center;
+    position: absolute;
+    color: #0c0c0c;
+    font-size: 18px;
+    text-decoration: none;
+    font-variant: small-caps;
+    right: 30px;
+    width: 98px;
+}
+.More a span {
+    display: inline-block;
+    width: 18px;
+    margin-left: 3px;
+}
+.More a:hover {
+    color: #d1c2c4d8;
+}
+.More a:hover span {
+    translate: 10px 0px;
+}
+.Club-And-Community-Container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    top: 19%;
+    background-color: #f6f6f6;
+    padding: 0px 50px;
+}
+.Club-And-Community-Container .Club-And-Community-Cards {
+    width: 33%;
+    height: 100%;
+    padding: 15px 15px 0px;
+}
+.Club-And-Community-Container .Club-And-Community-Cards:hover p {
+    translate: 0px -5px;
+}
+.Club-And-Community-Container .Club-And-Community-Cardss:hover h6 {
+    translate: 0px -5px;
+}
+.Club-And-Community-Container .Club-And-Community-Cards img {
+    height: 250px;
+    width: 400px;
+}
+.Club-And-Community-Container .Club-And-Community-Cards a {
+    text-decoration: none;
+}
+.Club-And-Community-Container .Club-And-Community-Cards h6 {
+    color: #0c0c0c85;
+    font-variant: small-caps;
+    margin-block-start: 50px;
+    margin-bottom: 5px;
+}
+.Club-And-Community-Container .Club-And-Community-Cards p {
+    color: #0c0c0c;
+    font-size: 20px;
+    width: 400px;
+}
+.Club-And-Community-Container .Club-And-Community-Cards span {
+    display: inline-block;
+    width: 90%;
+    height: 1px;
+    background-color: #ddd9d9b3;
+}
+/* ==========================================Champion-Section======================================================== */
+.Champian-Section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+    background-color: #fff;
+
+}
+.Champains-img {
+    display: flex;
+    gap: 60px;
+
+}
+.Champains-img img {
+    width: 650px;
+    height: 300px;
+}
+/* ==========================================Cups-Section======================================================== */
+.Cups-Section {
+    /* height: 50vh; */
+    width: 100vw;
+    background-color: #f6f6f6;
+
+}
+.Cups-Section ul {
+    padding: 40px 60px;
+    
+}
+.Cups-Section ul li {
+    display: inline-block;
+    padding: 0px 15px;
+}
+.Cups-Section ul li img {
+    width: 165px;
+    height: 121px;
+}
+.Cups-Section ul li .Number {
+    padding: 10px 0px 0px;
+    text-align: center;
+    color: #0c0c0cb2;
+}
+/* ==========================================Footer======================================================== */
+footer {
+    width: 100vw;
+    /* height: 150vh; */
+}
+.footer1 {
+    width: 100vw;
+    height: 30vh;
+    background-color: #dc0714;
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer1-links {
+    padding: 40px;
+}
+.footer1-links a img {
+    width: 200px;
+    height: 50px;
+}
+.footer2 {
+    width: 100vw;
+    height: 40vh;
+    background-color: #B71515;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+} 
+.footer2-links {
+    padding: 40px;
+}
+.footer2-links a img {
+    width: 85px;
+    height: 50px;
+}
+.footer3 {
+    position: relative;
+    width: 100vw;
+    height: 40vh;
+    background-color: #911712;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px 60px;
+}
+.Footer3-links {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    height: 185px;
+}
+.footer3 .Footer3-links1 ,
+.footer3 .Footer3-links2{
+    width: 150px;
+    margin-top: 15px;
+}
+.footer3 .Footer3-links1 a ,
+.Footer3-links2 a{
+    display:block;
+    padding: 5px 0px ;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.Icons-App-Part {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.Icons-App-Part .Icons {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-left: 200px;
+}
+.Icons-App-Part .Icons a {
+    font-size: 30px;
+    color: #fff;
+}
+.App {
+    display: flex;
+    gap: 10px;
+    margin-right: 50px;
+}
+.App a {
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    width: fit-content;
+    display: flex;
+    align-items: flex-start;
+    font-size: 15px;
+    padding: 7px;
+}
+.App a i {
+    font-size: 35px;
+}
+.App h5 {
+    color: #fff;
+    margin-block-start: 20px;
+}
+.footer3 span {
+    position: absolute;
+    width: 89%;
+    margin-right: 3%;
+    text-align: center;
+    height: 1px;
+    background-color: #d1c9c9b3;
+    bottom: 70px;
+    /* margin-left: 20px; */
+
+}
+.footer3 h6 {
+    position: absolute;
+    bottom: 30px;
+    color: #d1c9c9b3;
+    font-size: 10px;
+    margin-left: 50px;
+}
